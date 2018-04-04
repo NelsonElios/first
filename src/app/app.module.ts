@@ -8,16 +8,23 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {MoviesPage} from "../pages/movies/movies";
+import {MovieDetailPage} from "../pages/movie-detail/movie-detail";
+import {MovieListPage} from "../pages/movie-list/movie-list";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage
+
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    MoviesPage,
+    MovieDetailPage,
+    MovieListPage
   ],
   bootstrap: [IonicApp],
   entryComponents: [
